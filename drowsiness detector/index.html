@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+</head>
+<body>
+    <h1>Welcome to My Web App!</h1>
+    <p>This page is dynamically rendered using Jinja2 templates.</p>
+
+    <!-- Example of rendering a variable passed from Flask -->
+    <p>Hello, {{ name }}!</p>
+
+    <!-- Example of a loop rendering a list -->
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Example of conditional rendering -->
+    {% if show_message %}
+        <p>This is a special message!</p>
+    {% else %}
+        <p>No message today.</p>
+    {% endif %}
+</body>
+</html>
